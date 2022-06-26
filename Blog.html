@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name= "description" content="Portfolio Website">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="Abhishek Rokaya">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		/* For the styling of the Image slider */
+		 .slider {
+    		  width: 1000px;
+    		  height: 300px;
+    		  margin: 20px auto;
+    		  box-sizing: border-box;
+    		  overflow: hidden;
+    		  box-shadow: 5px 5px 10px grey;
+    		  border-radius: 10px;
+    		}
+
+        /* setting the image width and height */
+    	img  {
+    	  width: 100%;
+    	  height: 100%;
+   		 }
+   		 /* For the paragraph of blog */
+   		 p {
+    		color: white;
+    		font-family: arial;
+    		text-align: justify;
+    		}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- Division for Name Logo -->
+		<div class="header">
+			<h1>Abhishek Rokaya</h1>
+		</div>
+		<!-- Division for Navigation Bar -->
+		<div class="main">
+			<nav>
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Resume.html">Resume</a></li>
+					<li class="active"><a href="#">Blog</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h1 style="text-align: center;font-family: alien robot; color: white; text-align: center;">Impacts of Technology</h1>
+		<!--Division to keep the image and set it as image slider -->
+		<div class="slider">
+			<div id="img">
+      		<img src="images/d.jpg">
+      	 		<script>
+
+   				var images = ['images/a.jpg', 'images/b.jpg', 'images/c.jpg', 'images/d.jpg'];
+
+    			var x = 0;
+
+ 	  			var imgs = document.getElementById('img');
+
+   		 		setInterval(slider, 1500);
+
+
+	    		function slider() {
+
+      			if (x < images.length) {
+        			x = x + 1;
+      			} else {
+        			x = 1;
+      			}
+
+
+      			imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+    			}
+
+		 	</script>
+
+ 			</div>
+	 </div>
+  <!--Division to write the blog -->
+  <div style="width: 1000px; height: 980px; background-color:rgba(39,39,38,0.8); border-radius: 10px;">
+  	<p style="padding: 20px 20px 20px 20px; line-height: 1.5">
+  		As the time is passing, the technologies are becoming more and more developed. If we compare the world of today and what it was before 10 years, it is totally different. Within a span of 10 years, so much has changed. We cannot even imagine our life without technologies nowadays. People are so much relied on technologies that without it, things would completely change. Today’s world is a world of technologies. Almost everything is done through the technologies that has been made available. Technologies include internet, mobile phones, laptops, artificial intelligence, robotics and many more. As a coin has two sides, the impacts of technologies also has two sides: the positive and the negative one.<br><br>
+  		Looking at the bright side. Technology has made our lives a lot easier. With the help of technology, information are in the tip of our fingers. We can easily and quickly know what is happening in any part of the globe and also beyond it. Distance doesn’t feel like distance with the help of technology. We can communicate to any part of the world in a fraction of seconds. Technology is very useful in the business market as well. In fact there is hardly any business office that doesn't use the technology. Technology is used in every sector. Let it be hospital, shop, bank, entertainment, music, etc. In hospitals, CT scan, MRI, X-rays and many other tests are done by the technology. In shop, the transactions are recorded in a computer. In bank, the transactions are done via computers. Nowadays, we can also make transactions through our mobile phones using online paying system. This is made it a lot easier to make a transaction whenever we buy something. The movie halls use various multimedia technologies for our entertainment. The Virtual Reality makes us feel like we are actually living on it. With the time, it has grown a lot. Even music nowadays use various technologies to create a more upbeat songs or Electronic Dance Music (EDM). Moreover technologies have made our lives a lot easier, convenient and faster. Various social Medias have helped people to become more social and connect to strangers. Nowadays digital marketing has also helped business market to gloom. Despite the above mentions effects, there are other lots of positive effect of technologies.<br><br>
+		However, everything has its negative side effects as well. People nowadays have become so much relied on technologies that without it, it will be very hard for them to manage their lives. With the rapid increase of technologies, people are also using it for bad purposes as well. Since banks have online transactions, people are hacking the system and stealing people's money. Nowadays people have become so close with the technological world that they're forgetting the real world. People are completely ignoring the real life. Before technology were developed, friends-families used to make memories playing and having fun. But nowadays whenever friends-family gather, everyone is just busy using mobiles. Technologies has made us virtually social and near but in reality, we're very far from each other. Despite it, technologies also has some really bad effects on our health. Too much exposure to it may result in permanent damage of our eyes. Technologies has also bred laziness is people. Due to it, people do not have much exercise and that also causes to have some various diseases in their body. The stealing of intellectual property is also done through technologies. But the most negative impact of the technology is being monitored. The technologies we have are set with microphones and cameras. So, it is possible for someone to monitor us through it without us knowing. That invades our privacy. Since everything is online, the risk of our data and information getting stolen is also equally high. There are many other negative impacts as well. <br><br>
+		Thus, technology has been vastly developed over the past few years. In today's world, we cannot imagine our lives without technology. We all are very much relied on it. Although it has both negative and positive impact, it depends on how much we rely on it. If we rely on it too much, we might get some negative impacts as well. But with proper use and care, technology can be used positively avoiding the negative impacts. Technology has changed the world completely and made our lives easier, convinient and faster. Technology is very important for us at any stage of our lives. Therefore, technology has completely taken over the world but it has its own postive as well as negative effect.
+
+  	</p>
+  	
+  </div>
+	</main>
+	<footer class="footer">
+		<!-- Copyright and social media link -->
+		<a href="https://www.facebook.com/itssabhishek" target="_blank"><img src="images/fb.png" class="logo2"></a>
+		<a href="https://www.instagram.com/itssabhishek" target="_blank"><img src="images/ig.png" class="logo"></a>
+		<br>
+		<p style="color: white; text-align: center;">&copy; 2020 Abhishek Rokaya. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>

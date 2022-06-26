@@ -1,0 +1,93 @@
+  /* It covers all part of the browser*/
+ 		  *
+    {
+        margin: 0px auto;
+    }
+   /* Same background image on all of the pages*/
+ body {
+  background: url(../images/bgg.jpg) center fixed;
+  background-repeat: no-repeat ;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: cover;
+}
+header{
+	background-color: transparent;
+	height: 90px;
+  	background-position: center;	
+}
+/* For the navigation bar in all pages*/
+ul{
+	float: right; 
+	font-family: trajan pro;
+	list-style-type: none;
+	margin-top: 25px;
+	width: 97%;
+	position: fixed;
+	height: 50px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 15px;
+	border: 1px solid white transparent;
+	transition: 0.7s;
+}
+ul li a:hover{
+	background-color: grey;
+	
+}
+/* Only on the page that we are in*/
+
+ul li.active a{
+	background-color: grey;
+	color:black;
+
+}
+.main{
+        text-align: right;	
+
+    }
+.name{
+	float: left;
+	font-family: Moonhouse: 
+	color: solid white;
+	margin-left: 20px;
+}
+/* Font used as a logo in all pages header*/
+.header h1 {
+  position: fixed;
+  top: 18px;
+  left: 10px;
+  color: white;
+  font-family: TNA logo;
+  float: left;
+  font-size: 15px;
+  height: 50px;
+
+}
+.footer { 
+       color: white;
+       text-align: center;
+       margin-top: 100px;
+       font-family: arial;
+       bottom: 0px;
+
+}
+.logo
+{
+	height: 23px;
+	width: 25px;
+	opacity: 85%;
+	margin-left: 5px;
+
+}
+.logo2 {
+	height: 25px;
+	width: 25px;
+	opacity: 85%;
+}

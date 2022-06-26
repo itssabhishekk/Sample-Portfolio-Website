@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Abhishek</title>
+	<meta name= "description" content="Portfolio Website">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="Abhishek Rokaya">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	
+.title{
+	position: absolute;
+	transform: translate(-50%,-52%);
+	z-index: 1;
+}
+
+.title h1{
+	color:white;
+	font-size: 37px;
+	font-family: Alien Robot;
+	z-index: 1;
+}
+
+.buttons{
+	position: absolute;
+	top:56%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	margin-top: 15px;
+}
+
+.butn{
+	border:1px solid white;
+	padding:13px 35px;
+	color:white;
+	text-decoration: none;
+	margin: 5px;
+	transition:0.5s;
+	position: relative;
+	overflow: hidden; /* overflowbhidden helps to hide the objects that goes out of the boundries*/
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.butn::before{
+	
+	content:""; /*without the "content" before couldn't be used*/
+	position:absolute;
+	left:0;
+	width:100%;
+	height:0%;
+	background: grey;
+	z-index: -1; /* Z-index helps in overlapping the div over div or any thing with overlapping*/
+	transition: 0.5s; /*transition helps in showing the effects included in inserted time*/
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+.butn:hover::before{
+	height: 104%;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- Division for Name Logo -->
+		<div class="header">
+			<h1>Abhishek Rokaya</h1>
+		</div>
+		<!-- Division for Navigation Bar -->
+		<div class="main">
+			<nav>
+			<ul>
+				<li Class="active"><a href="#">Home</a></li>
+				<li><a href="Resume.html">Resume</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="Research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<main style="height: 200px; width: 50%; align-self: center; margin-top: 170px; padding-left: 50%;">
+		<!-- Division for text to welcome -->
+		<div class="title">
+			<h1>Hi! I'm Abhishek <br> Welcome to my site.</h1>
+		</div>
+		<!-- Division for Buttons -->
+		<div class="buttons">
+			<a href="Resume.html" class="butn">MY RESUME</a>
+			<a href="Blog.html" class="butn">MY BLOGS</a>
+			<a href="Contact.html" class="butn">CONTACT ME</a>
+		</div>
+	</main>
+	<footer class="footer">
+		<!-- Copyright and social media link -->
+			<a href="https://www.facebook.com/itssabhishek" target="_blank"><img src="images/fb.png" class="logo2"></a>
+			<a href="https://www.instagram.com/itssabhishek" target="_blank"><img src="images/ig.png" class="logo"></a>
+			<br>
+			<p style="color: white;">&copy; 2020 Abhishek Rokaya. All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me</title>
+	<meta name= "description" content="Portfolio Website">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="Abhishek Rokaya">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		/* Works for every input type that is text in the form */
+		input[type=text]{
+			opacity: 80%;
+			width: 530px;
+			height: 20px;
+			border-radius: 5px;
+		}
+		/* For the submit button of the form */
+		input[type=submit] {
+  			width: 160px;
+  			height: 40px;
+  			background-color: #D2D2D2;
+  			color: black;
+  			padding: 14px 20px;
+  			margin: 8px 0;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+  			float: right;
+		}
+
+		input[type=submit]:hover {
+ 			background-color: #ADADAD;
+		}
+		.font{
+			color: white;
+			font-family: arial;
+		}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<!-- Division for Name Logo -->
+		<div class="header">
+			<h1>Abhishek Rokaya</h1>
+		</div>
+		<!-- Division for Navigation Bar -->
+		<div class="main">
+			<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="Resume.html">Resume</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="Research.html">Research</a></li>
+				<li class="active"><a href="#">Contact</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<!-- Division for Form -->
+		<div style="float: left; background-color:rgba(192,192,192,0.05); margin-left: 30px; border-radius: 10px; margin-top: 0px">
+			<h3 style="color: white; font-family: alien robot; text-align: center;">Feedback Form</h3><br>
+			<form name="messageForm" onsubmit="validateForm()">
+				<p class="font">First Name :<br>
+					<input type="text" name="firstName" placeholder="First Name">
+				</p><br>
+				<p class="font">Last Name : <br>
+					<input type="text" name="lastName" placeholder="Last Name">
+				</p><br>
+				<p class="font">Gender : <br>
+					<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female </p><br>
+				<p class="font"> Email : <br>
+					<input type="text" name="email" placeholder="email@gmail.com">
+				</p><br>
+				<p class="font">Country<br>
+			 		<select id="country" name="country" style="width: 200px; opacity: 80%">
+			 			<option value="nepal">Nepal</option>
+     					 <option value="australia">Australia</option>
+     					 <option value="canada">Canada</option>
+     					 <option value="usa">USA</option>
+   					 </select>
+				</p>
+				<br>
+				<p class="font">Message : <br><textarea name="Message" style="width: 530px; height: 100px; opacity: 80%; border-radius: 5px" placeholder="Enter Message"></textarea></p>
+				<p><input type="submit" value="Send"></p>
+			</form>
+			<!-- Calling javascript for form validation -->
+			<script src="javascript/function.js"></script>
+		</div>
+		<!-- Division for Map and gmail ID -->
+		<div style="float: right; background-color:rgba(192,192,192,0.05); border-radius: 10px;margin-right: 30px; margin-top: 0px "> 
+			<h3 style="color: white; font-family: alien robot; text-align: center;">Find Us</h3><br>
+				<div style="width: 630px; height: 400px; opacity: 90%; border-radius: 10px">
+					<!-- Tag for map with Islington College's location pinned -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2778128004325!2d85.3237989148099!3d27.70870743203964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1579094082036!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0; border-radius: 10px" allowfullscreen=""></iframe>
+				</div>
+					<br><br>
+				<div style="margin-left: 160px">
+					<a href="https://www.gmail.com" target="_blank"><img src="images/gmail.png" style="height: 30px; width: 30px; float: left; margin-left: 5px; margin-top: 25px"></a>
+					<p class="font" style="float: left;margin-top: 30px; margin-left: 6px">
+							np01cp4a190164@islingtoncollege.edu.np
+					</p>
+				</div>
+	
+		</div>
+	</main>
+	<!-- Division for copyright and social media link -->
+		<div>
+			<footer class="footer" style="bottom: 0px; margin-top: 550px">
+				<a href="https://www.facebook.com/itssabhishek" target="_blank"><img src="images/fb.png" class="logo2"></a>
+				<a href="https://www.instagram.com/itssabhishek" target="_blank"><img src="images/ig.png" class="logo"></a>
+				<p style="color: white;">&copy; 2020 Abhishek Rokaya. All Rights Reserved.</p>
+				
+			</footer>
+		</div>
+</body>
+</html>
